@@ -3,7 +3,9 @@ import ClaimForm from './components/ClaimForm.jsx'
 import ResultDisplay from './components/ResultDisplay.jsx'
 import UploadMode from './components/UploadMode.jsx'
 
-const API = 'http://localhost:8000'
+// const API = 'http://localhost:8000'
+const API = 'https://claim-backend-v2.redcoast-5680289a.westus2.azurecontainerapps.io'
+
 
 export default function App() {
   const [page, setPage]           = useState('form')

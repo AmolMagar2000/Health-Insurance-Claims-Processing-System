@@ -164,9 +164,13 @@ app.add_middleware(
 
 
 # ── Routes ────────────────────────────────────────────────────────────────────
+# ✅ FIXED — unique function names
+@app.get("/")
+def root():            # Azure health probe hits this
+    return {"status": "ok", "service": "claims-pipeline"}
 
 @app.get("/health")
-def health():
+def health_check():
     return {"status": "ok", "service": "claims-pipeline"}
 
 
