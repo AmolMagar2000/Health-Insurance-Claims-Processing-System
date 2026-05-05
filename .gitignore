@@ -1,0 +1,32 @@
+# Environment variables
+.env
+
+# Python caches
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Python virtualenv
+venv/
+.env/
+.env.*
+
+# Node modules
+frontend/node_modules/
+backend/node_modules/
+
+# Build artifacts
+frontend/dist/
+frontend/build/
+
+# Editor directories and files
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
